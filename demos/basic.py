@@ -1,18 +1,12 @@
 from turtle import Turtle, Screen
 
-#bgcolor("grey9")
-
-e = Turtle()
-e.fillcolor('red') 
-e.pencolor('blue')
-e.pensize(2)
-
 def drawsq(t, s):
     for i in range(4):
         t.forward(s)
         t.left(90)
 
 def main():
+    e = Turtle()
     s = Screen()
     s.setup(800, 600)
     s.bgcolor('gray6')
