@@ -22,16 +22,15 @@ def main():
     e = Turtle()
     s = Screen()
     s.setworldcoordinates(-4,-2,4,2)
-    #s.setup(512, 512)
-    s.bgcolor('gray6')
+    s.bgcolor('gray12')
     s.reset()
     e.shapesize(2,2,2)
-    e.pencolor('purple3')
+    e.pencolor('grey45')
     e.pensize(4)
     line(-4, 0, 4, 0, e)
     line(0, -2, 0, 2, e)
-    graph(sin, e, 'SpringGreen2')
-    graph(cos, e, 'DeepSkyBlue2')
+    graph(sin, e, 'red')
+    graph(cos, e, 'yellow')
     return "DONE! :-)"
 
 if __name__ == "__main__":
