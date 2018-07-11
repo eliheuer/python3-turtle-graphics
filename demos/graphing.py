@@ -10,6 +10,7 @@ def main():
     turtle.shapesize(1,1,1)
     turtle.pencolor('grey45')
     turtle.pensize(4)
+    turtle.speed("fast")
 
     # Draw grid
     x = -4
@@ -21,7 +22,7 @@ def main():
         turtle.goto(x, 0)
         x += 0.2
         print("x =",round(x,4))
-    
+
     turtle.penup()
     x = 0
     y = -2
@@ -33,18 +34,18 @@ def main():
             turtle.goto(-0.4, y)
         turtle.goto(0, y)
         y += 0.2
-        print("y =",round(y,4))
     turtle.pencolor('red')
 
-    # Graphing starts here
+    # Move turtle to start point
     x = -4
     turtle.penup()
-    turtle.goto(x, 1/4*((x**2)-4))
+    turtle.goto(x, 0)
     turtle.pendown()
-    while x < 4:
+
+    # Draw graph    
+    while x <= 4:
+        turtle.goto(x, sin(x))
         x += 0.1
-        turtle.goto(x, 1/4*((x**2)-4))
-        print("x =",round(x,4))
     return "DONE! :-)"
 
 if __name__ == "__main__":
